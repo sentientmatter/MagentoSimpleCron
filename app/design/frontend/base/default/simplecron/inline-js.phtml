@@ -1,0 +1,8 @@
+<?php
+    $h = Mage::helper('core');
+    $info = new stdClass();
+    $info->base_dir = Mage::getBaseDir();
+?>
+<script type="text/javascript">
+    var my_custom_js_block_info = <?php echo $h->jsonEncode($info); ?>;
+</script>
