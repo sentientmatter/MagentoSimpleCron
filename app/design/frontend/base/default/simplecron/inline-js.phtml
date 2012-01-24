@@ -1,8 +1,8 @@
 <?php
     $h = Mage::helper('core');
     $info = new stdClass();
-	$info->trigger_url = '/simplecron';
-    $info->base_url = Mage::getBaseDir();
+	$info->trigger_url = 'simplecron';
+    $info->base_url = Mage::getBaseUrl();
 ?>
 <script type="text/javascript">
     var simplecron = <?php echo $h->jsonEncode($info); ?>;
