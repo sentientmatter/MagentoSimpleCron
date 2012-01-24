@@ -22,6 +22,6 @@ class SentientMatter_SimpleCron_Model_Dispatch_Observer extends Mage_Core_Model_
 		$headBlock = Mage::getSingleton('core/layout')->getBlock('head');
 		//var_dump();//->getBlock('head'));
 		//die();
-		$headBlock->addJs('simplecron.js');  
+		$headBlock->addJs('simplecron/trigger.js');  
 	}
 }

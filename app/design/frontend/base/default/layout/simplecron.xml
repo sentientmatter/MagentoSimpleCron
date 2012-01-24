@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+		<reference name="head">
+	        <block type="core/template" name="simplecron/inlinejs" template="simplecron/inline-js.phtml"></block>
+	   	</reference>
+   	</default>
+</layout>

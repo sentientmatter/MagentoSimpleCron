@@ -7,7 +7,7 @@
  
 Event.observe(window, 'load', function() { 
 	var request = new Ajax.Request(
-	    '/simplecron',
+	    simplecron.base_url + simplecron.trigger_url,
 	    {
 	        method: 'post',
 	        onComplete: function(transport){ // Defining Complete Callback Function

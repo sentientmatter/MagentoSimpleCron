@@ -15,6 +15,13 @@
                 </args>
             </qrcodes>
         </routers>  
+        <layout>
+            <updates>
+                <simplecron>
+                    <file>simplecron.xml</file>
+                </simplecron>
+            </updates>
+        </layout>
     </frontend>
     <default>
     	<system>
