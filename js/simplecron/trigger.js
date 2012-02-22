@@ -6,16 +6,17 @@
  */
  
 Event.observe(window, 'load', function() { 
-	var request = new Ajax.Request(
-	    simplecron.base_url + simplecron.trigger_url,
-	    {
-	        method: 'post',
-	        onComplete: function(transport){ // Defining Complete Callback Function
-	 
-	                    // Getting Ajax Response Text Which is JSON Object
-	            /*var jsonResponse=transport.responseText;*/
-	        },
-	        parameters: {}    // Seriallizing the form input values
-	    }
-	);
+	if(typeof(window.simplecron) != 'undefined'){
+		var request = new Ajax.Request(
+		    simplecron.base_url + simplecron.trigger_url,
+		    {
+		        method: 'post',
+		        onComplete: function(transport){ // Defining Complete Callback Function
+		                    // Getting Ajax Response Text Which is JSON Object
+		            /*var jsonResponse=transport.responseText;*/
+		        },
+		        parameters: {}    // Seriallizing the form input values
+		    }
+		);
+	}
 });

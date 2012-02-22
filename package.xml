@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+    <name>SentientMatter_SimpleCron</name>
+    <version>1.0.6</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/mit-license.php">MIT License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Easier cron triggering for your Magento store. SimpleCron eliminates the need to configure a separate scheduled task and periodically triggers your store's cron jobs automatically!</summary>
+    <description>SimpleCron simplifies an important part of any Magento setup, the cron job. Especially useful for stores that don't have a way to create crontab entries, this simple Magento cron extension will periodically (at an interval you choose) trigger your store's cron jobs. Install it and forget it; you'll never need to worry about your crontab or scheduled task failing again.</description>
+    <notes>1.0.6&#xD;
+- Fixed bug in dispatch observer that would attempt to add js to non page requests (like widget ajax requests)</notes>
+    <authors><author><name>Sentient Matter</name><user>sentientmatter</user><email>contact@sentientmatter.com</email></author></authors>
+    <date>2012-02-22</date>
+    <time>03:27:50</time>
+    <contents><target name="magelocal"><dir name="SentientMatter"><dir name="SimpleCron"><file name="LICENSE" hash="a0b2a61077006019701ba207b204f410"/><dir name="Model"><dir name="Dispatch"><file name="Observer.php" hash="af6a739dc8bf1d2f4b78552728897355"/></dir></dir><file name="README.md" hash="0e3f9b4fbfb92f1b644ddc2a230dbb9b"/><dir name="controllers"><file name="IndexController.php" hash="239c5d1b66514712d249034e68376818"/></dir><dir name="etc"><file name="config.xml" hash="4fd12a3ef2b1cb6208b06503df064e56"/><file name="simplecron.xml" hash="d095907e65f1fa6db8eb22c2ddefa63f"/><file name="system.xml" hash="479f420c70cae80123502591728729c4"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="simplecron.xml" hash="8450f799c83044f9f1cdb382c6dfa0f3"/></dir><dir name="template"><dir name="simplecron"><file name="inline-js.phtml" hash="e98267c2dc214bc6ce5edcb70bee07f5"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="SentientMatter_SimpleCron.xml" hash="9de510156b7ddce6c85ba0ed77314bcf"/></dir></target><target name="mageweb"><dir name="js"><dir name="simplecron"><file name="trigger.js" hash="068d5eee16f078bc81da6c6fb753e1b7"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php><package><name>Magento_Core_Modules</name><channel>community</channel><min>1.4.0</min><max>1.6.1</max></package><extension><name>gd</name><min></min><max></max></extension></required></dependencies>
+</package>

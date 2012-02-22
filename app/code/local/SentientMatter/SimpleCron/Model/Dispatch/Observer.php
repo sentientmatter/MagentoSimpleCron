@@ -18,10 +18,11 @@ class SentientMatter_SimpleCron_Model_Dispatch_Observer extends Mage_Core_Model_
 {
 	public function injectJs($observer)
 	{
-		//ini_set('display_errors', 1);
 		$headBlock = Mage::getSingleton('core/layout')->getBlock('head');
-		//var_dump();//->getBlock('head'));
-		//die();
-		$headBlock->addJs('simplecron/trigger.js');  
+		
+		// Fixes problem when $headBlock is not found
+		if($headBlock){
+			$headBlock->addJs('simplecron/trigger.js');  
+		}
 	}
 }
